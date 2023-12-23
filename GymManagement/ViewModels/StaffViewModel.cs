@@ -16,7 +16,21 @@ namespace GymManagement.ViewModels
 {
     public class StaffViewModel : BaseViewModel
     {
-        
+        public override async Task SearchData(string Content)
+        {
+            StaffContext = _staffContextClone;
+            SearchHelper<Staff> searchHelper = new(StaffContext);
+            ObservableCollection<Staff> searchResult = searchHelper.Result(Content);
+            if (searchResult != null)
+            {
+                StaffContext = searchResult;
+            }
+            else
+            {
+                StaffContext = _staffContextClone;
+            }
+            await Task.FromResult(Task.CompletedTask);
+        }
 
         #region DataFields
         private GymManagementDbContext DbContext { get; set; }
@@ -182,23 +196,7 @@ namespace GymManagement.ViewModels
                 OnPropertyChanged();
             }
         }
-        public override void SearchData(string Content)
-        {
-            //ObservableCollection<Customer> tempContext = (ObservableCollection<Type>)CustomerContext;
-            //_customerContextClone = _customerContext;
-            StaffContext = this._staffContextClone;
-            SearchHelper<Staff> searchHelper = new SearchHelper<Staff>(StaffContext);
-            ObservableCollection<Staff> searchResult = searchHelper.Result(Content);
-            //searchHelper.Result(Content, "Customer");
-            if (searchResult != null)
-            {
-                StaffContext = searchResult;
-            }
-            else
-            {
-                StaffContext = _staffContextClone;
-            }
-        }
+       
         public ICommand DeleteDataCommand { get; set; }
         public ICommand GridChangeCommand { get; set; }
         public StaffViewModel()

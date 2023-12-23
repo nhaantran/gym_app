@@ -107,9 +107,7 @@ namespace GymManagement.ViewModels
                     Task.Delay(TimeSpan.FromSeconds(3))
                         .ContinueWith((t, _) => eventArgs.Session.Close(false), null,
                             TaskScheduler.FromCurrentSynchronizationContext());
-
                 }
-
             }
         }
         public override async Task DeleteData(object model)

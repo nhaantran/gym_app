@@ -1,15 +1,8 @@
 ﻿using GymManagement.Dialogs;
-using GymManagement.Models;
 using GymManagement.Utils;
 using GymManagement.ViewModels;
 using MaterialDesignThemes.Wpf;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace GymManagement.Commands
 {
@@ -21,7 +14,7 @@ namespace GymManagement.Commands
             Decentralization role = Decentralization.GetDecentralization();
             if (role.RoleId == 1)
             {
-                _viewmodel.UpdateData();
+                await _viewmodel.UpdateData();
             }
             else
             {
@@ -29,7 +22,7 @@ namespace GymManagement.Commands
                 {
                     DataContext = new SampleMessageViewModel("Bạn không được cấp quyền để chỉnh sửa thông tin!")
                 };
-                DialogHost.Show(view, "RootDialog");
+                await DialogHost.Show(view, "RootDialog");
             }
             //Debug.WriteLine("Item: " + _viewmodel.SelectedItem);
             //Customer a = _viewmodel.SelectedItem as Customer;

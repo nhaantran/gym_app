@@ -1,29 +1,19 @@
-﻿using CommunityToolkit.Mvvm.Input;
-using GymManagement.Stores;
-using LiveChartsCore.Defaults;
-using LiveChartsCore.SkiaSharpView.Painting;
+﻿using LiveChartsCore.Defaults;
 using LiveChartsCore.SkiaSharpView.VisualElements;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore;
-using SkiaSharp;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using GymManagement.Models;
 using GymManagement.Services;
-using System.Globalization;
 
 namespace GymManagement.ViewModels
 {
     public class HomeViewModel : BaseViewModel
     {
-        
-
         public ICommand OneWeekCommand { get; set; }
         public ICommand OneMonthCommand { get; set; }
         public ICommand OneYearCommand { get; set; }

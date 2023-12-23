@@ -11,7 +11,7 @@ using System.Windows.Input;
 
 namespace GymManagement.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private object _selectedItem { get; set; }
@@ -25,7 +25,7 @@ namespace GymManagement.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        public virtual void SearchData(String content)
+        public virtual async Task SearchData(String content)
         {
             // Please Implementation this method
         }

@@ -267,7 +267,6 @@
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <DockPanel>
-
                                         <Button Command="{Binding DataContext.DeleteDataCommand, ElementName=GridCourse}"
                                         CommandParameter="{Binding ElementName=GridCourse}"
                                         Width="30" Height="30" Margin="5"
@@ -276,7 +275,6 @@
                                             <materialDesign:PackIcon Kind="Delete" Height="15" Width="15" />
                                         </Button>
                                     </DockPanel>
-
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>

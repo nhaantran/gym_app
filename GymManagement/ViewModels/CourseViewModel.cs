@@ -169,11 +169,14 @@ namespace GymManagement.ViewModels
 
         public override async Task DeleteData(object model)
         {
-            using (DbContext = new GymManagementDbContext())
+            if(model != null)
             {
-                DbContext.Remove<Course>(model as Course);
-                DbContext.SaveChanges();
-                _courseContext.Remove(model as Course);
+                using (DbContext = new GymManagementDbContext())
+                {
+                    DbContext.Remove<Course>(model as Course);
+                    DbContext.SaveChanges();
+                    _courseContext.Remove(model as Course);
+                }
             }
         }
         public override async Task UpdateData()

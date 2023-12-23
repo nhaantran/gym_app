@@ -186,7 +186,7 @@ namespace GymManagement.ViewModels
             GridChangeCommand = new GridChangeCommand(this);
             ViewContractListOfCustomerCommand = new ViewContractListOfCustomerCommand(this);
         }
-        public override void SearchData(string content)
+        public override async Task SearchData(string content)
         {
             Debug.WriteLine(content);
         }

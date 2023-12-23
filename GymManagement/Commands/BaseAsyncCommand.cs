@@ -9,13 +9,13 @@ namespace GymManagement.Commands
 {
     public abstract class BaseAsyncCommand : BaseCommand
     {
+        public abstract Task ExecuteAsync(object parameter);
+
         private bool _isExecuting;
         private bool IsExecuting
         {
-            get
-            {
-                return _isExecuting;
-            }
+            get  => _isExecuting;
+            
             set
             {
                 _isExecuting = value;
@@ -42,6 +42,5 @@ namespace GymManagement.Commands
             }
         }
 
-        public abstract Task ExecuteAsync(object parameter);
     }
 }

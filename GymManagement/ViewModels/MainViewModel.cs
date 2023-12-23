@@ -1,25 +1,17 @@
 ﻿using GymManagement.Commands;
 using GymManagement.Dialogs;
 using GymManagement.Models;
-using GymManagement.Services;
 using GymManagement.Stores;
 using GymManagement.Utils;
-using HarfBuzzSharp;
 using LiveChartsCore.SkiaSharpView;
 using MaterialDesignThemes.Wpf;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Diagnostics.Contracts;
-using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Data;
-using System.Windows.Ink;
 using System.Windows.Input;
 
 namespace GymManagement.ViewModels
@@ -105,7 +97,7 @@ namespace GymManagement.ViewModels
 
             #endregion
 
-            LoadData();
+            LoadData().ConfigureAwait(false);
             
 
             _navigationStore = navigationStore;
