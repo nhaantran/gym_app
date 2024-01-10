@@ -7795,19 +7795,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\HUAWEI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Learning\\GymManagementSystem\\GymManagement\\GymManagement\\GymManagement.csproj",
+      "projectUniqueName": "C:\\Users\\HUAWEI\\Desktop\\gym_app\\GymManagement\\GymManagement.csproj",
       "projectName": "GymManagement",
-      "projectPath": "C:\\Learning\\GymManagementSystem\\GymManagement\\GymManagement\\GymManagement.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Learning\\GymManagementSystem\\GymManagement\\GymManagement\\obj\\",
+      "projectPath": "C:\\Users\\HUAWEI\\Desktop\\gym_app\\GymManagement\\GymManagement.csproj",
+      "packagesPath": "C:\\Users\\HUAWEI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HUAWEI\\Desktop\\gym_app\\GymManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HUAWEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7901,7 +7901,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

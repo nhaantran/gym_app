@@ -1,6 +1,7 @@
 ﻿using GymManagement.Commands;
 using GymManagement.Models;
 using GymManagement.Services;
+using GymManagement.Strategies;
 using LiveChartsCore;
 using LiveChartsCore.Defaults;
 using LiveChartsCore.SkiaSharpView;
@@ -99,6 +100,14 @@ namespace GymManagement.ViewModels
         {
             CreateBookingCommand = new CreateBookingCommand(this);
             
+        }
+        public void BookScheduleForAllBookings(Customer customer, Schedule schedule, IBookingStrategy strategy)
+        {
+            foreach (var booking in BookingContext)
+            {
+                booking.Strategy = strategy;
+                booking.BookSchedule(customer, schedule);
+            }
         }
 
     }

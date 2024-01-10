@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GymManagement.Strategies;
+using System;
 using System.Collections.Generic;
 
 namespace GymManagement.Models
@@ -14,5 +15,12 @@ namespace GymManagement.Models
         public virtual Contract? Contract { get; set; }
         public virtual Customer? Customer { get; set; }
         public virtual Staff? Staff { get; set; }
+        public IBookingStrategy Strategy { get; set; }
+        public int? ScheduleId { get; set; }
+        public virtual Schedule? Schedule { get; set; }
+        public void BookSchedule(Customer customer, Schedule schedule)
+        {
+            Strategy.BookSchedule(customer, schedule);
+        }
     }
 }
