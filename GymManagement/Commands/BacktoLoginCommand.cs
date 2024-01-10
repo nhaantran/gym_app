@@ -21,15 +21,12 @@ namespace GymManagement.Commands
         {
             if (parameter != null)
             {
-
                 _navigationStore.CurrentViewModel = new LoginViewModel(_navigationStore);
                 Window p = parameter as Window;
-                LoginWindow login = new LoginWindow()
-                {
-                    DataContext = _navigationStore.CurrentViewModel
-                };
+                LoginWindow login = LoginWindow.Instance;
+                login.DataContext = _navigationStore.CurrentViewModel;
                 login.Show();
-                p.Close();
+                p!.Close();
             }
         }
     }

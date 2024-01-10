@@ -78,7 +78,7 @@ namespace GymManagement.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GymManagement;component/views/facilitypage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GymManagement;V1.0.0.0;component/views/facilitypage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\FacilityPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

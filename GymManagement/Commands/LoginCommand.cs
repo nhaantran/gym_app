@@ -106,19 +106,14 @@ namespace GymManagement.Commands
             {
                 //var roleId = await SetRole(_loginViewModel.UserEmail);
                 //var roleId = 1;
-                _navigationStore.CurrentViewModel = null ;
-                
-
+                _navigationStore.CurrentViewModel = null;
                 FrameworkElement window = GetWindowParent(parameter as UserControl);
                 var w = window as Window;
                 if (w != null)
                 {
                     _loginViewModel.IsLoggedIn = true;
-                    MainWindow mainWindow = new MainWindow()
-                    {
-                        DataContext = new MainViewModel(_loginViewModel.UserEmail, _navigationStore)
-                    };
-
+                    var mainWindow = MainWindow.GetMainWindow();
+                    mainWindow.DataContext = new new MainViewModel(_loginViewModel.UserEmail, _navigationStore);
                     mainWindow.Show();
                     w.Close();
                 }
@@ -130,6 +125,10 @@ namespace GymManagement.Commands
                 await DialogHost.Show(view, "LoginRootDialog");
             }
         }
+        //MainWindow mainWindow = new MainWindow()
+        //{
+        //    DataContext = new MainViewModel(_loginViewModel.UserEmail, _navigationStore)
+        //};
         public LoginCommand(LoginViewModel loginViewModel, NavigationStore navigationStore)
         {
             _loginViewModel = loginViewModel;

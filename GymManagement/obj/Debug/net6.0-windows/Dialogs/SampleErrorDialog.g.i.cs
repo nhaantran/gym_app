@@ -56,7 +56,7 @@ namespace GymManagement.Dialogs {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GymManagement;component/dialogs/sampleerrordialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GymManagement;V1.0.0.0;component/dialogs/sampleerrordialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Dialogs\SampleErrorDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

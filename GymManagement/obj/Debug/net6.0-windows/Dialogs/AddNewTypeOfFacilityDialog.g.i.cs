@@ -57,7 +57,7 @@ namespace GymManagement.Dialogs {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GymManagement;component/dialogs/addnewtypeoffacilitydialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GymManagement;V1.0.0.0;component/dialogs/addnewtypeoffacilitydialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Dialogs\AddNewTypeOfFacilityDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

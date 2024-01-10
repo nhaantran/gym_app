@@ -1,7 +1,9 @@
-﻿using GymManagement.Dialogs;
+﻿using GymManagement.Const;
+using GymManagement.Dialogs;
 using GymManagement.Models;
 using GymManagement.Services;
 using GymManagement.ViewModels;
+using LiveChartsCore;
 using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
@@ -56,6 +58,12 @@ namespace GymManagement.Commands
                 {
                     viewmodel.AddNewBooking();
                     //_viewmodel.BookingContext.Add(viewmodel.NewBookingUpdate);
+
+                    // new code
+                    var liveChartsService = LiveChartServiceFactory.GetChartService(LiveChart.LiveChartsCoreSkiaSharpView);
+                    _viewmodel.SeriesBooking = (ISeries[]) liveChartsService.TotalBookingsToDaySeries();
+                    
+                    // old code
                     _viewmodel.SeriesBooking = LiveChartsService.TotalBookingsToDaySeries();
                 }
 

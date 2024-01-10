@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Learning\GymManagementSystem\GymManagement\GymManagement\App.xaml
 29100812583
 
-107415845126
+112-1661694882
 236-130916769
 Charts\ContractsCountChart.xaml;Dialogs\AddNewContractDialog.xaml;Dialogs\AddNewCourseDialog.xaml;Dialogs\AddNewFacilityDialog.xaml;Dialogs\AddNewStaffDialog.xaml;Dialogs\AddNewTypeOfCourseDialog.xaml;Dialogs\AddNewTypeOfFacilityDialog.xaml;Dialogs\ContractDetail.xaml;Dialogs\ContractDetailDialog.xaml;Dialogs\ListOfContractsForBookingDialog.xaml;Dialogs\SampleConfirmDialog.xaml;Dialogs\SampleErrorDialog.xaml;Dialogs\SampleMessageDialog.xaml;Dialogs\SampleProgressDialog.xaml;Dialogs\ViewContractListOfCustomerDialog.xaml;LoginWindow.xaml;MainWindow.xaml;ResourceXAML\MainResource.xaml;Views\BookingPage.xaml;Views\ContractPage.xaml;Views\CoursePage.xaml;Views\CustomerPage.xaml;Views\FacilityPage.xaml;Views\ForgetPassword.xaml;Views\HomePage.xaml;Views\Login.xaml;Views\SearchBar.xaml;Views\StaffPage.xaml;Views\WindowTaskBar.xaml;
 

@@ -46,7 +46,7 @@ namespace GymManagement.ViewModels
                 else Flag = false;
                 }
         }
-        public AddNewCourseTypeViewModel(CourseViewModel viewmodel)
+        public AddNewCourseTypeViewModel(BaseCommand viewmodel)
         {
             TypeOfCourseContext = viewmodel.TypeList;
         }

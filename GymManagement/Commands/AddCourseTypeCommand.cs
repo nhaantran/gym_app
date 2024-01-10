@@ -12,7 +12,7 @@ namespace GymManagement.Commands
 {
     public class AddCourseTypeCommand : BaseAsyncCommand
     {
-        private readonly CourseViewModel _viewmodel;
+        private readonly BaseCommand _viewmodel;
         public override async Task ExecuteAsync(object parameter)
         {
             var view = new AddNewTypeOfCourseDialog()
@@ -21,7 +21,7 @@ namespace GymManagement.Commands
             };
             await DialogHost.Show(view, "RootDialog",null, ExtendedClosingEventHandler, null);
         }
-        public AddCourseTypeCommand(CourseViewModel viewmodel)
+        public AddCourseTypeCommand(BaseCommand viewmodel)
         {
             _viewmodel = viewmodel;
             _viewmodel.PropertyChanged += OnViewModelPropertyChanged;

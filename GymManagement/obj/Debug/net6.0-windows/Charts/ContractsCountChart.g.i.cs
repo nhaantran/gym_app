@@ -62,7 +62,7 @@ namespace GymManagement.Charts {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GymManagement;component/charts/contractscountchart.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GymManagement;V1.0.0.0;component/charts/contractscountchart.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Charts\ContractsCountChart.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

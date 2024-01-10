@@ -11,15 +11,12 @@ using System.Collections.ObjectModel;
 using GymManagement.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
-
 namespace GymManagement.Services;
-
-class LiveChartsService 
+class LiveChartsService
 {
     private static GymManagementDbContext _dbcontext;
     #region Methods
 
-   
     private static int TotalContractsCountByDay(DateTime day)
     {
         using (_dbcontext = new GymManagementDbContext())
@@ -67,7 +64,7 @@ class LiveChartsService
             Text = "Doanh thu của phòng Gym",
 
             TextSize = 25,
-            Padding = new LiveChartsCore.Drawing.Padding(15),
+            Padding = new LiveChartsCoreSkiaSharpView.Drawing.Padding(15),
             Paint = new SolidColorPaint(SKColors.DarkSlateGray)
         };
     public static LabelVisual TitleContract { get; set; } =
@@ -75,7 +72,7 @@ class LiveChartsService
        {
            Text = "Tổng số hợp đồng đã được tạo trong 7 ngày gần nhất",
            TextSize = 25,
-           Padding = new LiveChartsCore.Drawing.Padding(15),
+           Padding = new LiveChartsCoreSkiaSharpView.Drawing.Padding(15),
            Paint = new SolidColorPaint(SKColors.DarkSlateGray)
        };
 
@@ -85,7 +82,7 @@ class LiveChartsService
            Text = "Số lần đặt lịch trong 7 ngày vừa qua",
 
            TextSize = 25,
-           Padding = new LiveChartsCore.Drawing.Padding(15),
+           Padding = new LiveChartsCoreSkiaSharpView.Drawing.Padding(15),
            Paint = new SolidColorPaint(SKColors.DarkSlateGray)
        };
     #endregion
@@ -229,7 +226,7 @@ class LiveChartsService
             
             Labeler = value => new DateTime((long) value).ToString("dddd",CultureInfo.GetCultureInfo("vi")),
             LabelsRotation = 10,
-            Padding = new LiveChartsCore.Drawing.Padding(0, 0, 0, 0),
+            Padding = new LiveChartsCoreSkiaSharpView.Drawing.Padding(0, 0, 0, 0),
             
             UnitWidth = TimeSpan.FromDays(1).Ticks,
             
@@ -245,7 +242,7 @@ class LiveChartsService
             Labeler = value => new DateTime((long) value).ToString("dd",CultureInfo.GetCultureInfo("vi")),
             LabelsRotation = 10,
 
-            Padding = new LiveChartsCore.Drawing.Padding(0,0,0,0),
+            Padding = new LiveChartsCoreSkiaSharpView.Drawing.Padding(0,0,0,0),
             UnitWidth = TimeSpan.FromDays(1).Ticks,
 
 
@@ -259,7 +256,7 @@ class LiveChartsService
         {
             Labeler = value => new DateTime((long) value).ToString("MMMM",CultureInfo.GetCultureInfo("vi")),
             LabelsRotation = 50,
-            Padding = new LiveChartsCore.Drawing.Padding(0,0,0,0),
+            Padding = new LiveChartsCoreSkiaSharpView.Drawing.Padding(0,0,0,0),
 
 
 

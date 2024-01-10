@@ -18,18 +18,15 @@ namespace GymManagement
         private readonly NavigationStore _navigationStore;
         public App()
         {
-            _navigationStore = new NavigationStore();   
+            _navigationStore = new NavigationStore();
+            Startup += App_StartUp;
         }
-        protected override void OnStartup(StartupEventArgs e)
+        private void App_StartUp(object sender, StartupEventArgs e)
         {
             _navigationStore.CurrentViewModel = new LoginViewModel(_navigationStore);
-            MainWindow = new LoginWindow()
-            {
-                DataContext = _navigationStore.CurrentViewModel
-            };
-            MainWindow.Show();
-            base.OnStartup(e);
+            MainWindow = GymManagement.LoginWindow.Instance;
+            MainWindow.DataContext = _navigationStore.CurrentViewModel;
+            GymManagement.LoginWindow.Instance.Show();
         }
-
     }
 }

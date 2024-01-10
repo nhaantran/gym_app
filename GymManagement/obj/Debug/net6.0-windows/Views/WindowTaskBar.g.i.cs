@@ -69,7 +69,7 @@ namespace GymManagement.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GymManagement;component/views/windowtaskbar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GymManagement;V1.0.0.0;component/views/windowtaskbar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\WindowTaskBar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -65,7 +65,7 @@ namespace GymManagement.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GymManagement;component/views/forgetpassword.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GymManagement;V1.0.0.0;component/views/forgetpassword.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ForgetPassword.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
