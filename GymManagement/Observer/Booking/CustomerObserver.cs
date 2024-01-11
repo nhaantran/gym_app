@@ -10,7 +10,17 @@ namespace GymManagement.Observer.Booking
         {
             this.customer = customer;
         }
-
+        public void Notify(Models.Booking booking)
+        {
+            if(booking.Status == true)
+            {
+                GetSuccessNotify(booking);
+            }
+            else
+            {
+                GetCancelNotify(booking);
+            }
+        }
         public void GetSuccessNotify(Models.Booking booking)
         {
             GymManagement.Email.Email email = new Email();

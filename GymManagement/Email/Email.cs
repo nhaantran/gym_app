@@ -23,7 +23,7 @@ namespace GymManagement.Email
 
         private EmailConfig() { }
 
-        public class EmailConfigBuilder
+        public class EmailConfigBuilder : IEmailBuilder
         {
             private EmailConfig emailConfig = new EmailConfig();
 
