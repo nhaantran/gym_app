@@ -8,6 +8,11 @@ namespace GymManagement.Observer.Booking
         private List<IObserver> observers = new List<IObserver>();
         private GymManagement.Models.Booking booking;
 
+        public BookingSubject(Booking booking)
+        {
+            this.booking = booking;
+        }
+
         public void Attach(IObserver observer)
         {
             observers.Add(observer);
@@ -22,9 +27,8 @@ namespace GymManagement.Observer.Booking
         {
             foreach (var observer in observers)
             {
-                observer.GetNotify();
+                observer.Notify(booking);
             }
-            
         }
 	}
 }
