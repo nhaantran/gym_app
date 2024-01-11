@@ -14,6 +14,9 @@
     <None Remove="Images\logo_app.png" />
     <None Remove="Images\logo_app.svg" />
     <None Remove="Images\Workout-rafiki.png" />
+    <None Remove="Observer\" />
+    <None Remove="Observer\Booking\" />
+    <None Remove="Email\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,4 +47,9 @@
     <Resource Include="Images\Workout-rafiki.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Observer\" />
+    <Folder Include="Observer\Booking\" />
+    <Folder Include="Email\" />
+  </ItemGroup>
 </Project>

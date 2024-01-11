@@ -1,0 +1,46 @@
+﻿<Properties>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GymManagement/Observer/Booking/BookingSubject.cs">
+    <Files>
+      <File FileName="GymManagement/Models/Staff.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="GymManagement/Views/BookingPage.xaml.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="GymManagement/Models/Facility.cs" Line="1" Column="1" />
+      <File FileName="GymManagement/ViewModels/CourseViewModel.cs" Line="19" Column="9" />
+      <File FileName="GymManagement/ViewModels/AddNewCourseTypeViewModel.cs" Line="36" Column="18" />
+      <File FileName="GymManagement/ViewModels/AddNewCourseViewModel.cs" Line="11" Column="18" />
+      <File FileName="GymManagement/Models/Booking.cs" Line="19" Column="1" />
+      <File FileName="GymManagement/Views/BookingPage.xaml" Line="20" Column="31" />
+      <File FileName="GymManagement/Observer/Booking/IObserver.cs" Line="6" Column="24" />
+      <File FileName="GymManagement/Observer/Booking/StaffObserver.cs" Line="18" Column="29" />
+      <File FileName="GymManagement/Observer/Booking/CustomerObserver.cs" Line="3" Column="1" />
+      <File FileName="GymManagement/Email/Email.cs" Line="77" Column="6" />
+      <File FileName="GymManagement/Email/EmailSender.cs" Line="24" Column="29" />
+      <File FileName="GymManagement/Email/IEmailSender.cs" Line="6" Column="31" />
+      <File FileName="GymManagement/Observer/Booking/BookingSubject.cs" Line="32" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GymManagement">
+            <Node name="GymManagement">
+              <Node name="Email" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Observer" expanded="True">
+                <Node name="Booking">
+                  <Node name="BookingSubject.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
