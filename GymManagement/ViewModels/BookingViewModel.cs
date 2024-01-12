@@ -98,7 +98,6 @@ namespace GymManagement.ViewModels
         public BookingViewModel()
         {
             CreateBookingCommand = new CreateBookingCommand(this);
-            
         }
 
     }

@@ -28,8 +28,8 @@
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
                                     <Button
+                                    Click="Search_Trigger"
                                     Style="{DynamicResource MaterialDesignToolButton}"
-                                    Command="{Binding SearchCommand}"
                                     CommandParameter="{Binding ElementName=ucSearchBar}">
                                         <materialDesign:PackIcon Kind="Magnify" Opacity=".56" />
                                     </Button>
